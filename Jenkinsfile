@@ -1,8 +1,11 @@
 pipeline {
     agent any
+
     stages {
-        step('build') {
-            python3 hello.py
+        stage('Build') {
+            steps {
+                python3 hello.py
+            }
         }
     }
 }
