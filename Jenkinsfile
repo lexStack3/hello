@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
+        step('build') {
             python3 hello.py
         }
     }
